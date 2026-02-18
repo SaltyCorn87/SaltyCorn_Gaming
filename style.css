@@ -25,3 +25,32 @@ body{
 .link-card{display:block; color:inherit; text-decoration:none;}
 .link-card:hover{border-color:var(--accent);}
 .footer{padding:1.5rem 1rem; border-top:1px solid var(--border); color:var(--muted); text-align:center;}
+
+/* ===== CENTERING STYLES ===== */
+
+/* Center site title and subtitle */
+.site-header {
+  text-align: center;
+}
+
+/* Center navigation buttons */
+.nav {
+  justify-content: center;
+}
+
+/* Center all main section headers */
+.card h2,
+.card h3 {
+  text-align: center;
+}
+
+/* Center hero image section */
+.hero-image {
+  display: block;
+  margin: 2rem auto;
+}
+
+/* Optional: center paragraph text in hero card only */
+.hero-text {
+  text-align: center;
+}
