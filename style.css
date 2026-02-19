@@ -51,6 +51,21 @@ body{
 .link-card:hover h3 {
   color: var(--accent);
 }
+/* Light mode card shadow adjustment */
+[data-theme="light"] .card {
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
+/* Improve contrast for link cards in light mode */
+[data-theme="light"] .link-card:hover {
+  border-color: var(--accent);
+}
+/* Light mode nav buttons */
+[data-theme="light"] .nav a,
+[data-theme="light"] .theme-toggle {
+  background-color: #ffffff;
+}
+
 .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem;}
 .link-card{display:block; color:inherit; text-decoration:none;}
 .link-card:hover{border-color:var(--accent);}
