@@ -1,31 +1,27 @@
 (function () {
-  const root = document.documentElement;
+  const root = document.documentElement; // <html>
   const btn = document.getElementById("themeToggle");
 
-  // If the button isn't on the page, do nothing.
   if (!btn) return;
 
-  // Load saved preference (default to dark)
-  const saved = localStorage.getItem("theme");
-  if (saved === "light") root.setAttribute("data-theme", "light");
-
-  // Update button label based on current theme
-  function syncLabel() {
-    const isLight = root.getAttribute("data-theme") === "light";
-    btn.textContent = isLight ? "☀️ Light" : "🌙 Dark";
-  }
-  syncLabel();
-
-  // Toggle theme
-  btn.addEventListener("click", function () {
-    const isLight = root.getAttribute("data-theme") === "light";
-    if (isLight) {
-      root.removeAttribute("data-theme");
-      localStorage.setItem("theme", "dark");
-    } else {
+  function setTheme(theme) {
+    if (theme === "light") {
       root.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
+      btn.textContent = "☀️ Light";
+    } else {
+      root.removeAttribute("data-theme");
+      btn.textContent = "🌙 Dark";
     }
-    syncLabel();
+    localStorage.setItem("theme", theme);
+  }
+
+  // Load saved theme (default dark)
+  const saved = localStorage.getItem("theme") || "dark";
+  setTheme(saved);
+
+  // Toggle on click
+  btn.addEventListener("click", function () {
+    const current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
+    setTheme(current === "light" ? "dark" : "light");
   });
 })();
