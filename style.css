@@ -105,4 +105,7 @@ body{
 .theme-toggle:hover {
   border-color: var(--accent);
 }
+html, body, .card, .nav a, .theme-toggle {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
 
