@@ -34,6 +34,13 @@ body{
     0 18px 40px rgba(0, 0, 0, 0.45),
     0 0 20px rgba(74, 163, 255, 0.25);
 }
+.link-card {
+  cursor: pointer;
+}
+
+.link-card:hover h3 {
+  color: var(--accent);
+}
 .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem;}
 .link-card{display:block; color:inherit; text-decoration:none;}
 .link-card:hover{border-color:var(--accent);}
