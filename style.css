@@ -2,6 +2,15 @@
   --bg:#0b0f14; --card:#121826; --text:#e6edf3; --muted:#9aa4af;
   --border:#243041; --accent:#4aa3ff;
 }
+/* Light theme overrides */
+[data-theme="light"] {
+  --bg: #f6f8fc;
+  --card: #ffffff;
+  --text: #0b1220;
+  --muted: #526074;
+  --border: #d7deea;
+  --accent: #2563eb;
+}
 *{box-sizing:border-box;}
 body{
   margin:0; font-family: 'Poppins', system-ui, sans-serif;
