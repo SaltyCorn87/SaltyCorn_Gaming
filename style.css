@@ -4,13 +4,14 @@
 }
 /* Light theme overrides */
 [data-theme="light"] {
-  --bg: #f6f8fc;
-  --card: #ffffff;
-  --text: #0b1220;
-  --muted: #526074;
-  --border: #d7deea;
-  --accent: #2563eb;
+  --bg: #f4f6fb;        /* soft light background */
+  --card: #ffffff;     /* true white cards */
+  --text: #111827;     /* dark readable text */
+  --muted: #4b5563;    /* readable muted text */
+  --border: #d1d5db;   /* light gray borders */
+  --accent: #2563eb;   /* blue accent */
 }
+
 *{box-sizing:border-box;}
 body{
   margin:0; font-family: 'Poppins', system-ui, sans-serif;
