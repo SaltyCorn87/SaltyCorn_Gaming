@@ -111,6 +111,13 @@ body{
   border: 1px solid var(--border);
 }
 
+.hero-figure { text-align: center; }
+.hero-caption {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 /* Optional: center paragraph text in hero card only */
 .hero-text {
   text-align: center;
