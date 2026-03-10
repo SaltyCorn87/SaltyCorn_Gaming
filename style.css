@@ -174,3 +174,66 @@ html, body, .card, .nav a, .theme-toggle {
     top: auto;
   }
 }
+
+/* ===== Dropdown Menu ===== */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-link {
+  color: var(--text);
+  text-decoration: none;
+  padding: .45rem .7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  display: inline-block;
+  background: transparent;
+}
+
+.dropdown-link:hover {
+  border-color: var(--accent);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.65rem 1rem;
+  color: var(--text);
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(74, 163, 255, 0.10);
+  color: var(--accent);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Better light mode dropdown */
+[data-theme="light"] .dropdown-menu {
+  background: var(--card);
+  border-color: var(--border);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
