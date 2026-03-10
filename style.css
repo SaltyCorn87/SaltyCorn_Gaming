@@ -175,65 +175,49 @@ html, body, .card, .nav a, .theme-toggle {
   }
 }
 
-/* ===== Dropdown Menu ===== */
-
+/* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-link {
-  color: var(--text);
-  text-decoration: none;
-  padding: .45rem .7rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  display: inline-block;
-  background: transparent;
-}
-
-.dropdown-link:hover {
-  border-color: var(--accent);
-}
-
+/* Hide menu by default */
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 8px);
+  top: 120%;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 220px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
-  padding: 0.5rem 0;
+  padding: 8px 0;
+  min-width: 200px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   z-index: 1000;
 }
 
+/* Dropdown links */
 .dropdown-menu a {
   display: block;
-  padding: 0.65rem 1rem;
-  color: var(--text);
+  padding: 10px 16px;
   text-decoration: none;
+  color: var(--text);
   border: none;
-  border-radius: 0;
-  background: transparent;
-  text-align: left;
 }
 
+/* Hover effect */
 .dropdown-menu a:hover {
-  background: rgba(74, 163, 255, 0.10);
+  background: rgba(74,163,255,0.1);
   color: var(--accent);
 }
 
+/* SHOW MENU ON HOVER */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* Better light mode dropdown */
-[data-theme="light"] .dropdown-menu {
-  background: var(--card);
-  border-color: var(--border);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+.dropdown > a::after {
+  content: " ▾";
+  font-size: 0.8em;
 }
