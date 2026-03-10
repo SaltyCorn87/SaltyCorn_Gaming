@@ -272,8 +272,3 @@ html, body, .card, .nav a, .theme-toggle {
   border-color: var(--border);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
 }
-
-.dropdown > a::after {
-  content: " ▾";
-  font-size: 0.8em;
-}
