@@ -324,3 +324,16 @@ html, body, .card, .nav a, .theme-toggle {
   padding: 12px;
   border-radius: 12px;
 }
+
+/* Multiple images in one console row */
+
+.console-images {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.console-images img {
+  width: 140px;
+  border-radius: 10px;
+}
