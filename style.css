@@ -337,3 +337,10 @@ html, body, .card, .nav a, .theme-toggle {
   width: 140px;
   border-radius: 10px;
 }
+.console-row img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  background: #0e1420;
+  padding: 12px;
+}
