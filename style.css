@@ -272,3 +272,49 @@ html, body, .card, .nav a, .theme-toggle {
   border-color: var(--border);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
 }
+
+/* Console layout */
+
+.console-row {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.console-row img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+}
+
+.console-text h3 {
+  margin-top: 0;
+}
+
+/* Reverse layout (image on right) */
+
+.console-row.reverse {
+  grid-template-columns: 1fr 320px;
+}
+
+.console-row.reverse img {
+  order: 2;
+}
+
+/* Mobile friendly */
+
+@media (max-width: 768px) {
+
+  .console-row,
+  .console-row.reverse {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .console-row.reverse img {
+    order: 0;
+  }
+
+}
