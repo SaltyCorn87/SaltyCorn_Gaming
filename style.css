@@ -277,7 +277,7 @@ html, body, .card, .nav a, .theme-toggle {
 
 .console-row {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 260px 1fr;
   gap: 2rem;
   align-items: center;
   margin: 2rem 0;
@@ -296,7 +296,7 @@ html, body, .card, .nav a, .theme-toggle {
 /* Reverse layout (image on right) */
 
 .console-row.reverse {
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr 260px;
 }
 
 .console-row.reverse img {
