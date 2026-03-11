@@ -283,12 +283,6 @@ html, body, .card, .nav a, .theme-toggle {
   margin: 2rem 0;
 }
 
-.console-row img {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 12px;
-}
-
 .console-text h3 {
   margin-top: 0;
 }
@@ -317,12 +311,6 @@ html, body, .card, .nav a, .theme-toggle {
     order: 0;
   }
 
-}
-
-.console-row img {
-  background: #111;
-  padding: 12px;
-  border-radius: 12px;
 }
 
 /* Multiple images in one console row */
