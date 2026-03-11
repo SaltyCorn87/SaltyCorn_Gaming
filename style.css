@@ -339,8 +339,10 @@ html, body, .card, .nav a, .theme-toggle {
 }
 .console-row img {
   width: 100%;
-  max-width: 320px;
+  max-width: 260px;   /* controls console image size */
+  height: auto;
   border-radius: 12px;
   background: #0e1420;
-  padding: 12px;
+  padding: 10px;
+  object-fit: contain;
 }
