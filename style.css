@@ -318,3 +318,9 @@ html, body, .card, .nav a, .theme-toggle {
   }
 
 }
+
+.console-row img {
+  background: #111;
+  padding: 12px;
+  border-radius: 12px;
+}
