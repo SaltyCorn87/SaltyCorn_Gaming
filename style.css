@@ -351,3 +351,12 @@ html, body, .card, .nav a, .theme-toggle {
   left: 0;
   border-radius: 8px;
 }
+
+.video-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.video-section h2 {
+  margin-bottom: 1rem;
+}
