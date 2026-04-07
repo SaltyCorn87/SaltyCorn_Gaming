@@ -352,3 +352,8 @@ html, body, .card, .nav a, .theme-toggle {
   display: inline-block;
   padding-bottom: 2px;
 }
+
+.grid .link-card {
+  text-decoration: none;
+  text-align: center;
+}
