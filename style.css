@@ -459,3 +459,6 @@ html, body, .card, .nav a, .theme-toggle {
   height: 220px;        /* same height as your first section */
   object-fit: cover;
 }
+ .section-title {
+  text-align: center;
+}
