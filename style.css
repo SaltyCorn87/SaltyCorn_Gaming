@@ -435,4 +435,14 @@ html, body, .card, .nav a, .theme-toggle {
     max-width: 100%;
   }
 }
+.handheld-gallery {
+  display: flex;
+  margin-top: 1rem;
+}
 
+.handheld-gallery img {
+  width: 50%;
+  height: 220px;         
+  object-fit: cover;      
+  display: block;
+}
