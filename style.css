@@ -456,9 +456,21 @@ html, body, .card, .nav a, .theme-toggle {
 
 .handheld-gallery.three img {
   width: 33.33%;
-  height: 220px;        /* same height as your first section */
+  height: 220px;        
   object-fit: cover;
 }
  .section-title {
   text-align: center;
+}
+
+.arcade-gallery {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.arcade-gallery img {
+  width: 50%;
+  height: 220px;      
+  object-fit: cover;   
+  display: block;
 }
