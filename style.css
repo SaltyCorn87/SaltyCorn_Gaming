@@ -470,7 +470,18 @@ html, body, .card, .nav a, .theme-toggle {
 
 .arcade-gallery img {
   width: 50%;
-  height: 220px;      
+  height: 260px;      
   object-fit: cover;   
+  display: block;
+}
+.lan-gallery {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.lan-gallery img {
+  width: 50%;
+  height: 220px;
+  object-fit: cover;
   display: block;
 }
