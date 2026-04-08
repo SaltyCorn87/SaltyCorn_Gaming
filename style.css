@@ -407,3 +407,8 @@ html, body, .card, .nav a, .theme-toggle {
     max-width: 100%;
   }
 }
+
+.small-console {
+  max-width: 85%;
+  max-height: 85%;
+}
