@@ -446,3 +446,9 @@ html, body, .card, .nav a, .theme-toggle {
   object-fit: cover;      
   display: block;
 }
+
+.handheld-gallery.three img {
+  width: 33.33%;
+  height: 220px;        /* same height as your first section */
+  object-fit: cover;
+}
