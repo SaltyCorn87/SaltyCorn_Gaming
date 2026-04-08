@@ -352,7 +352,7 @@ html, body, .card, .nav a, .theme-toggle {
   width: 100%;
   max-width: 500px;   
   margin: 1rem auto;
-  padding-bottom: 65%;
+  padding-bottom: 50%;
 }
 
 .video-container iframe {
