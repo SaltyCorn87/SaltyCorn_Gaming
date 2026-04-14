@@ -559,74 +559,57 @@ html, body, .card, .nav a, .theme-toggle {
   line-height: 1.7;
 }
 
-.references-section {
-  max-width: 820px;
-  margin: 2rem auto;
-  padding: 1.25rem 1.5rem;
-  text-align: left;
-}
-.references-section.card {
-  padding: 1.25rem 1.5rem !important;
-  text-align: left !important;
+/* ===== References Footer ===== */
+
+.references-footer {
+  width: 100%;
+  background: #666; /* adjust darker/lighter to match your sample */
+  margin-top: 2rem;
+  padding: 1.5rem 0;
 }
 
-.references-title {
-  font-size: 1.15rem;
+.references-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.references-footer-title {
+  margin: 0 0 1rem;
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: underline;
-  margin: 0 0 1rem;
-  text-align: center;
+  color: #fff;
+  text-align: left;
 }
 
-.references-list {
+.references-footer-list {
   list-style: none;
-  padding-left: 0;
   margin: 0;
-  font-size: 0.9rem;
+  padding: 0;
 }
 
-.references-list li {
-  margin: 0 0 0.7rem;
+.references-footer-list li {
+  margin: 0 0 0.55rem;
+  font-size: 0.9rem;
   line-height: 1.45;
+  color: #fff;
   text-align: left;
   padding-left: 1.25rem;
-  text-indent: -1.25rem; 
-  overflow-wrap: anywhere; 
+  text-indent: -1.25rem; /* hanging indent */
+  overflow-wrap: anywhere;
   word-break: break-word;
 }
 
-.references-list li:last-child {
+.references-footer-list li:last-child {
   margin-bottom: 0;
 }
 
-.references-list em {
-  font-style: italic;
-}
-
-.references-list a {
-  color: var(--text);
+.references-footer-list a {
+  color: #fff;
   text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
-@media (max-width: 768px) {
-  .references-section,
-  .references-section.card {
-    max-width: 100%;
-    padding: 1rem 1rem !important;
-  }
-
-  .references-title {
-    font-size: 1.05rem;
-  }
-
-  .references-list {
-    font-size: 0.85rem;
-  }
-
-  .references-list li {
-    line-height: 1.4;
-    padding-left: 1rem;
-    text-indent: -1rem;
-  }
+.references-footer-list em {
+  font-style: italic;
 }
