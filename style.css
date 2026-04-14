@@ -563,22 +563,24 @@ html, body, .card, .nav a, .theme-toggle {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background: #666;
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
 }
 
 .references-footer-inner {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
+
 .references-footer-title {
-  font-size: 1rem;
+  font-size: 0.95rem;   
   font-weight: 700;
   text-decoration: underline;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: #fff;
 }
+
 
 .references-footer-list {
   list-style: none;
@@ -587,12 +589,13 @@ html, body, .card, .nav a, .theme-toggle {
 }
 
 .references-footer-list li {
-  font-size: 0.85rem;
-  line-height: 1.45;
-  margin-bottom: 0.5rem;
+  font-size: 0.75rem;  
+  line-height: 1.35;    
+  margin-bottom: 0.35rem;
   color: #fff;
-  padding-left: 1.2rem;
-  text-indent: -1.2rem; 
+
+  padding-left: 1rem;
+  text-indent: -1rem;   
 }
 
 .references-footer-list a {
