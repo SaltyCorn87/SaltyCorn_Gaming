@@ -559,50 +559,40 @@ html, body, .card, .nav a, .theme-toggle {
   line-height: 1.7;
 }
 
-/* ===== References Footer ===== */
-
 .references-footer {
-  width: 100%;
-  background: #6a6a6a;
-  margin-top: 2rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: #666;
   padding: 1.5rem 0;
 }
 
 .references-footer-inner {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .references-footer-title {
-  margin: 0 0 1rem;
   font-size: 1rem;
   font-weight: 700;
   text-decoration: underline;
+  margin-bottom: 1rem;
   color: #fff;
-  text-align: left;
 }
 
 .references-footer-list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .references-footer-list li {
-  margin: 0 0 0.55rem;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   line-height: 1.45;
+  margin-bottom: 0.5rem;
   color: #fff;
-  text-align: left;
-  padding-left: 1.25rem;
-  text-indent: -1.25rem; /* hanging indent */
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-
-.references-footer-list li:last-child {
-  margin-bottom: 0;
+  padding-left: 1.2rem;
+  text-indent: -1.2rem; 
 }
 
 .references-footer-list a {
@@ -610,6 +600,6 @@ html, body, .card, .nav a, .theme-toggle {
   text-decoration: underline;
 }
 
-.references-footer-list em {
-  font-style: italic;
+.references-footer-list a:hover {
+  opacity: 0.8;
 }
