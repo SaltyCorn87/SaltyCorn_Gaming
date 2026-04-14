@@ -563,7 +563,7 @@ html, body, .card, .nav a, .theme-toggle {
 
 .references-footer {
   width: 100%;
-  background: #666; /* adjust darker/lighter to match your sample */
+  background: #6a6a6a;
   margin-top: 2rem;
   padding: 1.5rem 0;
 }
@@ -591,7 +591,7 @@ html, body, .card, .nav a, .theme-toggle {
 
 .references-footer-list li {
   margin: 0 0 0.55rem;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   line-height: 1.45;
   color: #fff;
   text-align: left;
