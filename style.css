@@ -558,3 +558,39 @@ html, body, .card, .nav a, .theme-toggle {
   color: var(--text);
   line-height: 1.7;
 }
+
+.references-section {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+.references-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.references-list p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.references-title {
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.references-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.references-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+}
