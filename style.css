@@ -708,3 +708,9 @@ html, body, .card, .nav a, .theme-toggle {
   color: var(--muted);
   margin-top: 0.5rem;
 }
+
+.console-row > .lan-caption,
+.console-stack .lan-caption {
+  text-align: center;
+  margin-top: 6px;
+}
