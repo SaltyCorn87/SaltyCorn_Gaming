@@ -13,9 +13,13 @@
 }
 
 *{box-sizing:border-box;}
-body{
+html, body{
   margin:0; font-family: 'Poppins', system-ui, sans-serif;
   background:var(--bg); color:var(--text);
+}
+
+* {
+  font-family: inherit;
 }
 .site-header{padding:2rem 1rem 1rem; border-bottom:1px solid var(--border);}
 .site-header h1{margin:0 0 .25rem;}
