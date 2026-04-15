@@ -30,12 +30,10 @@ html, body{
   left: 0;
   width: 100%;
   z-index: 9999;
-
   padding: 1rem 1rem 0.5rem;
   border-bottom: 1px solid var(--border);
   background: var(--bg);
   text-align: center;
-
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -58,6 +56,11 @@ html, body{
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
 }
 
 .nav a,
@@ -88,7 +91,6 @@ body {
   padding-top: 110px;
 }
 
-
 .nav a:hover{border-color:var(--accent);}
 .container{max-width:1000px; margin:0 auto; padding:1rem;}
 .card {
@@ -101,11 +103,6 @@ body {
     0 10px 30px rgba(0, 0, 0, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.03);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.dropdown {
-  display: flex;
-  align-items: center;
 }
 
 .card:hover {
