@@ -676,7 +676,7 @@ html, body, .card, .nav a, .theme-toggle {
 .mobile-gallery {
   display: flex;
   justify-content: center;
-  align-items: center;   
+  align-items: flex-start;   
   gap: 12px;
   margin-top: 15px;
   flex-wrap: wrap;
