@@ -22,7 +22,7 @@ html, body{
   font-family: inherit;
 }
 
-/* ===== Header ===== */
+
 
 .site-header {
   position: fixed;
@@ -30,10 +30,19 @@ html, body{
   left: 0;
   width: 100%;
   z-index: 9999;
+
   padding: 1rem 1rem 0.5rem;
   border-bottom: 1px solid var(--border);
-  background: var(--bg);
   text-align: center;
+
+  background:
+    linear-gradient(rgba(11, 15, 20, 0.6), rgba(11, 15, 20, 0.75)),
+    url("/images/headerbanner.png");
+
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -43,6 +52,12 @@ html, body{
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.2;
+}
+
+.site-header h1,
+.subtitle {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .subtitle {
@@ -67,25 +82,27 @@ html, body{
 .nav a,
 .dropdown-link,
 .theme-toggle {
-  color: var(--text);
+  color: #fff;
   text-decoration: none;
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1;
   padding: 0.55rem 0.9rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.35);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(4px);
 }
 
 .nav a:hover,
 .dropdown-link:hover,
 .theme-toggle:hover {
   border-color: var(--accent);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -245,18 +262,20 @@ html, body, .card, .nav a, .theme-toggle {
 }
 
 .dropdown-link {
-  color: var(--text);
+  color: #fff;
   text-decoration: none;
   padding: 0.45rem 0.7rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   display: inline-block;
-  background: transparent;
-  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .dropdown-link:hover {
   border-color: var(--accent);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .dropdown-menu {
@@ -265,11 +284,13 @@ html, body, .card, .nav a, .theme-toggle {
   left: 50%;
   transform: translateX(-50%) translateY(8px);
   min-width: 230px;
-  background: var(--card);
+
+  background: rgba(18, 24, 38, 0.95);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 0.5rem 0;
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(8px);
 
   opacity: 0;
   visibility: hidden;
@@ -293,16 +314,17 @@ html, body, .card, .nav a, .theme-toggle {
 .dropdown-menu a {
   display: block;
   padding: 0.75rem 1rem;
-  color: var(--text);
+  color: #e5e7eb;
   text-decoration: none;
   border: none;
   background: transparent;
   text-align: left;
+
   transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
 }
 
 .dropdown-menu a:hover {
-  background: rgba(74, 163, 255, 0.10);
+  background: rgba(74, 163, 255, 0.15);
   color: var(--accent);
   padding-left: 1.2rem;
 }
