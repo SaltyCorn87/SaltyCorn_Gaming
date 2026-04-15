@@ -717,3 +717,11 @@ html, body, .card, .nav a, .theme-toggle {
   text-align: center;
   margin-top: 6px;
 }
+ [data-theme="light"] .nav a,
+[data-theme="light"] .dropdown-link,
+[data-theme="light"] .theme-toggle {
+  color: #111827; /* dark text */
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(4px);
+}
