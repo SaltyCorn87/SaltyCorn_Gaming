@@ -702,3 +702,9 @@ html, body, .card, .nav a, .theme-toggle {
   margin-top: 5px;
   color: #ccc;
 }
+.video-source {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
