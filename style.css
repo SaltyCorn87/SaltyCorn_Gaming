@@ -606,3 +606,33 @@ html, body, .card, .nav a, .theme-toggle {
 .references-footer-list a:hover {
   opacity: 0.8;
 }
+.mobile-gallery {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mobile-gallery img {
+  width: 30%;
+  max-width: 260px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.lan-gallery {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lan-gallery img {
+  width: 30%;
+  max-width: 260px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+}
