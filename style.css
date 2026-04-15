@@ -731,3 +731,8 @@ html, body, .card, .nav a, .theme-toggle {
   background: rgba(255, 255, 255, 1);
   border-color: var(--accent);
 }
+[data-theme="light"] .site-header {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.85)),
+    url("/SaltyCorn_Gaming/images/headerbanner.png");
+}
